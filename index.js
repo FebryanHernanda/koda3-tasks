@@ -54,30 +54,62 @@ tasksIrul();
 
 const febryan = require("./tasks/febryan");
 
-/* Soal 1 - triangle */
-console.log("--------Triangle Ver. 1--------");
-febryan.task1(5);
+function taskFebryan() {
 
-/* Soal 2 - count array */
-console.log("----------Count Array----------");
-febryan.task2([1, 2, 3, 4, 5]);
+    /* Soal 1 - triangle */
+    console.log("--------Triangle Ver. 1--------");
+    try {
+        febryan.task1(5);
+    } catch (error) {
+        console.log(error.message);
+    }
+    
+    /* Soal 2 - count array */
+    console.log("----------Count Array----------");
+    try {
+        febryan.task2([1, 2, 3, 4, 5]);
+    } catch (error) {
+        console.log(error.message);
+    }
+    
+    /* Soal 3 - reverse triangle */
+    console.log("--------Triangle Ver. 2--------");
+    try {
+        febryan.task3(5);
+    } catch (error) {
+        console.log(error.message);
+    }
+    
+    /* Soal 4 - process numbers*/
+    console.log("--------Process Numbers--------");
+    try {
+        febryan.task4([2, 4, 6, 8,]);
+    } catch (error) {
+        console.log(error.message);
+    }
+    
+    /* Soal 5 - cetak table */
+    console.log("----------Cetak Tabel----------");
+    try {
+        febryan.task5(3);
+    } catch (error) {
+        console.log(error.message);
+    }
+    
+    /* Soal 6 - buat rentang */
+    console.log("----------Cetak Rentang----------");
+    try {
+        febryan.task6(5,10);
+    } catch (error) {
+        console.log(error.message);
+    }
+    /* Soal 7 - identifikasi error */
+    console.log("-------Identifikasi Error--------");
+    try {
+        febryan.task7();
+    } catch (error) {
+        console.log(error.message);
+    }
+}
 
-/* Soal 3 - reverse triangle */
-console.log("--------Triangle Ver. 2--------");
-febryan.task3(5);
-
-/* Soal 4 - process numbers*/
-console.log("--------Process Numbers--------");
-febryan.task4([2, 4, 6, 8]);
-
-/* Soal 5 - cetak table */
-console.log("----------Cetak Tabel----------");
-febryan.task5(3);
-
-/* Soal 6 - buat rentang */
-console.log("----------Cetak Rentang----------");
-febryan.task6(5,10);
-
-/* Soal 7 - identifikasi error */
-console.log("-------Identifikasi Error--------");
-febryan.task7();
+taskFebryan();
